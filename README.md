@@ -1,5 +1,7 @@
 # KYC Platform
 
+
+[![Coverage](https://img.shields.io/badge/Coverage-JaCoCo-blue?style=flat-square&logo=codecov)](https://github.com/Raphasha27/kyc-platform/actions)
 [![CI](https://github.com/koketseraphasha/kyc-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/koketseraphasha/kyc-platform/actions/workflows/ci.yml)
 
 Know Your Customer verification platform for banking compliance. Automates identity verification, document collection, and risk categorization.
