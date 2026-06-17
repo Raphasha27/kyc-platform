@@ -12,6 +12,22 @@ Know Your Customer verification platform for banking compliance. Automates ident
 - Risk categorization
 - Audit trail
 
+
+## Architecture
+
+```mermaid
+graph LR
+    CL[Client] --> GW[API Gateway]
+    GW --> AUTH[Auth Service]
+    GW --> SVC[Banking Service]
+    SVC --> DB[(PostgreSQL)]
+    SVC --> EVT[Event Bus]
+    EVT --> AUD[Audit Log]
+    EVT --> FRAUD[Fraud Detection]
+```
+
+Microservices-based architecture with API Gateway, authentication layer, PostgreSQL persistence, and event-driven communication.
+
 ## Stack
 Java 21, Spring Boot, PostgreSQL, Docker
 
